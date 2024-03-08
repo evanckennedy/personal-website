@@ -44,6 +44,22 @@ h1, h2, h3, p, span, li {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Section Heading                                      */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.section-heading {
+  padding: 40px 0;
+}
+
+.section-intro {
+  text-transform: uppercase;
+}
+
+.section-name {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Landing Page                                         */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 header {
@@ -97,6 +113,9 @@ header h1, header nav {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  About                                                */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.section-heading {
+  text-align: center;
+}
 
 .row {
   display: flex;
