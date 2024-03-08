@@ -169,7 +169,74 @@ header h1, header nav {
 /*  Contact                                              */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+/* Contact info */
+.contact-info {
+  flex-wrap: wrap;
+}
 
+.card {
+  flex: 0 0 calc(25% - 15px);
+  max-width: calc(25% - 15px);
+  height: 200px;
+  border-radius: 6px;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.card-icon {
+  font-size: 38px;
+  background: #fe8826;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 50%;
+  transition: 0.25s ease-in-out;
+}
+
+.card p {
+  margin-top: 15px;
+  font-weight: 300;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.25s ease-in-out;
+}
+
+/* targets p when card is hovered over */
+.card:hover p {
+  opacity: 1;
+  color: #000;
+}
+
+/* targets icon when card is hovered over */
+.card:hover .card-icon {
+  background: none;
+  color: #fe8826;
+  transform: scale(1.5); 
+}
+
+/* Media Queries */
+/* 768px and down */
+@media (max-width: 768px) {
+  .card {
+    /* Minus 10px on each box accounts for 20px gap*/
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+
+/* 480px and down */
+@media (max-width: 480px) {
+  .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 
 /* FOOTER */
 footer {
