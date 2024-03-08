@@ -174,4 +174,10 @@ header h1, header nav {
 /* FOOTER */
 footer {
   height: 70px;
+  background-color: #070709;
+  /* #0f0f15 */
+}
+
+footer p, footer nav {
+  line-height: 70px;
 }
