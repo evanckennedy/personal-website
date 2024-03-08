@@ -27,6 +27,7 @@
 /* BASIC STYLING */
 :root {
   --app-background-dark: rgb(24, 23, 32);
+  --secondary-color: #007bff;
 }
 
 body {
@@ -52,6 +53,7 @@ h1, h2, h3, p, span, li {
 
 .section-intro {
   text-transform: uppercase;
+  color: var(--secondary-color)
 }
 
 .section-name {
@@ -179,18 +181,18 @@ header h1, header nav {
   max-width: calc(25% - 15px);
   height: 200px;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: #0f0f15;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #0f0f15;
   cursor: pointer;
   border-radius: 6px;
 }
 
 .card-icon {
   font-size: 38px;
-  background: #fe8826;
+  background: var(--secondary-color);
   width: 80px;
   height: 80px;
   text-align: center;
@@ -201,7 +203,8 @@ header h1, header nav {
 
 .card p {
   margin-top: 15px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 600;
   max-height: 0;
   opacity: 0;
   transition: 0.25s ease-in-out;
@@ -210,13 +213,13 @@ header h1, header nav {
 /* targets p when card is hovered over */
 .card:hover p {
   opacity: 1;
-  color: #000;
+  color: #fff;
 }
 
 /* targets icon when card is hovered over */
 .card:hover .card-icon {
   background: none;
-  color: #fe8826;
+  color: var(--secondary-color);
   transform: scale(1.5); 
 }
 
@@ -247,4 +250,8 @@ footer {
 
 footer p, footer nav {
   line-height: 70px;
+}
+
+footer i {
+  color: #fff;
 }
