@@ -1,8 +1,6 @@
 ## Personal Website
 
-### Description
-
-My personal website showcases my skills and projects as a junior full-stack 
+My personal website provides an overview of my skills as a junior full-stack 
 developer based in Winnipeg, Canada. 
 
 ### Features
