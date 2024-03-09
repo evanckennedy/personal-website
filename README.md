@@ -1,15 +1,18 @@
 ## Personal Website
 
 ### Description
+
 My personal website showcases my skills and projects as a junior full-stack 
 developer based in Winnipeg, Canada. 
 
 ### Features
+
 - Landing Page with Hero Banner
 - About Me Section
 - Contact Information
 
 ### Contact
+
 For inquiries, reach out to:
 - Email: evanckennedy@protonmail.com
 - LinkedIn: [@evanckennedy](https://www.linkedin.com/in/evanckennedy)
