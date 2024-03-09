@@ -159,14 +159,6 @@ header h1, header nav {
 
 }
 
-/* 710px and down */
-@media (max-width: 710px) {
-  .column {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Contact                                              */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -223,6 +215,25 @@ header h1, header nav {
   transform: scale(1.5); 
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Footer                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer {
+  height: 70px;
+  background-color: #070709;
+}
+
+footer p, footer nav {
+  line-height: 70px;
+}
+
+footer i {
+  color: #fff;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Media Queries                                            */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Media Queries */
 /* 768px and down */
 @media (max-width: 768px) {
@@ -230,6 +241,10 @@ header h1, header nav {
     /* Minus 10px on each box accounts for 20px gap*/
     flex: 0 0 calc(50% - 10px);
     max-width: calc(50% - 10px);
+  }
+  .column {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -239,19 +254,4 @@ header h1, header nav {
     flex: 0 0 100%;
     max-width: 100%;
   }
-}
-
-/* FOOTER */
-footer {
-  height: 70px;
-  background-color: #070709;
-  /* #0f0f15 */
-}
-
-footer p, footer nav {
-  line-height: 70px;
-}
-
-footer i {
-  color: #fff;
 }
