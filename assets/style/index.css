@@ -156,8 +156,7 @@ header h1, header nav {
 }
 
 .one {
-  flex: 0 0 calc(30% - 10px);
-  width: calc(30% - 10px);
+  flex: 0 0 calc(30% - 25px);
   display: grid;
   place-items: center;
 
@@ -168,7 +167,7 @@ header h1, header nav {
   }
 }
 .two {
-  flex: 1;
+  flex: 0 0 calc(70% - 25px);
 
   p {
     font-size: 18px;
@@ -266,7 +265,7 @@ footer i {
     max-width: calc(50% - 10px);
   }
 
-  .column {
+  .one, .two {
     flex: 0 0 100%;
     max-width: 100%;
   }
