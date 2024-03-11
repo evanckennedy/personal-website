@@ -8,10 +8,10 @@ import * as utils from './utils.js';
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Element selection                                     */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-const linkedinCard = document.querySelector('.linkedin-card');
-const gitHubCard = document.querySelector('.github-card');
-const whatsAppCard = document.querySelector('.whatsapp-card');
-const emailCard = document.querySelector('.email-card');
+const linkedinCard = utils.select('.linkedin-card');
+const gitHubCard = utils.select('.github-card');
+const whatsAppCard = utils.select('.whatsapp-card');
+const emailCard = utils.select('.email-card');
 
 const linkedinLink = "https://www.linkedin.com/in/evanckennedy";
 const gitHubLink = "https://github.com/evanckennedy";
@@ -19,21 +19,20 @@ const whatsAppLink = "https://wa.me/12044302548";
 const emailLink = "mailto:evanckennedy@protonmail.com";
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* Make cards clickable                                  */
+/* Open card links in a new tab when clicked             */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-linkedinCard.addEventListener('click', () => {
+utils.listen('click', linkedinCard, () => {
   window.open(linkedinLink, "_blank");
-});
+})
 
-gitHubCard.addEventListener('click', () => {
+utils.listen('click', gitHubCard, () => {
   window.open(gitHubLink, "_blank");
 });
 
-whatsAppCard.addEventListener('click', () => {
+utils.listen('click', whatsAppCard, () => {
   window.open(whatsAppLink, "_blank");
 });
 
-emailCard.addEventListener('click', () => {
+utils.listen('click', emailCard, () => {
   window.open(emailLink, "_blank");
 });
