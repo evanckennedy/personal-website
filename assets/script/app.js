@@ -23,17 +23,17 @@ const emailLink = "mailto:evanckennedy@protonmail.com";
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 linkedinCard.addEventListener('click', () => {
-  window.location.href = linkedinLink;
+  window.open(linkedinLink, "_blank");
 });
 
 gitHubCard.addEventListener('click', () => {
-  window.location.href = gitHubLink;
+  window.open(gitHubLink, "_blank");
 });
 
 whatsAppCard.addEventListener('click', () => {
-  window.location.href = whatsAppLink;
+  window.open(whatsAppLink, "_blank");
 });
 
 emailCard.addEventListener('click', () => {
-  window.location.href = emailLink;
+  window.open(emailLink, "_blank");
 });
