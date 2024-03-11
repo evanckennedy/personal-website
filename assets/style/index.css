@@ -193,6 +193,7 @@ header h1, header nav {
   color: #0f0f15;
   cursor: pointer;
   border-radius: 6px;
+  box-shadow: 0 0 3px rgb(255 255 255 / 0.15);
 }
 
 .card-icon {
